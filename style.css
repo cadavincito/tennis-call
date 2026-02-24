@@ -1,0 +1,130 @@
+/* Tennis Call — versión MUY sencilla (solo HTML + CSS) */
+:root{
+  --bg:#0f172a;
+  --card:#111827;
+  --border:#39475b;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#3b82f6;
+  --ok:#22c55e;
+  --warn:#fbbf24;
+  --radius:14px;
+  --max:1000px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.45;
+}
+a{color:white; text-decoration:none}
+
+img{max-width:100%; display:block}
+
+.container{width:min(100% - 28px, var(--max)); margin:0 auto}
+
+header{
+  background:#020617;
+  border-bottom:1px solid var(--border);
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+  flex-wrap:wrap; /* para que baje solo en dispositivos moviles */
+}
+.brand{display:flex; align-items:center; gap:10px; font-weight:800}
+.brand img{width:34px; height:34px; object-fit:contain}
+.links{display:flex; gap:10px; flex-wrap:wrap}
+.links a{
+  padding:8px 12px;
+  border:1px solid transparent;
+  border-radius:12px;
+}
+.links a:hover{border-color:var(--border)}
+
+.links .cta{
+  border-color:rgba(59,130,246,.55);
+  background:rgba(59,130,246,.15);
+  font-weight:800;
+}
+
+.hero{padding:22px 0}
+.hero h1{margin:0 0 6px 0; font-size:28px}
+.hero p{margin:0; color:var(--muted); max-width:60ch}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:14px;
+}
+.section{padding:18px 0 26px 0}
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+@media (min-width: 860px){
+  .grid{grid-template-columns:repeat(3, 1fr)}
+}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.badge.ok{border-color:rgba(34,197,94,.55); background:rgba(34,197,94,.12)}
+.badge.warn{border-color:rgba(251,191,36,.55); background:rgba(251,191,36,.12)}
+.badge.soon{border-color:rgba(148,163,184,.4); background:rgba(148,163,184,.10); color:#d1d5db}
+
+.small{color:var(--muted); font-size:13px}
+.list{margin:10px 0 0 0; padding:0; list-style:none; display:grid; gap:4px; color:#d1d5db; font-size:14px}
+
+/* lista de ranking */
+.table-wrap{overflow:auto}
+table{
+  width:100%;
+  border-collapse:collapse;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+th,td{padding:10px 10px; border-bottom:1px solid var(--border); text-align:left; font-size:14px}
+th{color:#cbd5e1; font-size:13px; text-transform:uppercase; letter-spacing:.06em}
+tr:last-child td{border-bottom:none}
+
+/* Formulario de inscripcion */
+form{display:grid; gap:10px}
+label{font-size:13px; color:var(--muted); font-weight:700}
+input, select{
+  width:100%;
+  padding:10px 10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:#0b1220;
+  color:var(--text);
+}
+.btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(59,130,246,.55);
+  background:rgba(59,130,246,.15);
+  font-weight:800;
+  text-align:center;
+}
+.footer{
+  padding:16px 0;
+  border-top:1px solid var(--border);
+  background:#0b1220;
+  color:var(--muted);
+  font-size:13px;
+}

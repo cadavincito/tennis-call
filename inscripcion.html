@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tennis Call</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Logo Tennis Call">
+        <span>Tennis Call</span>
+      </a>
+      <div class="links">
+        <a href="index.html">Torneos</a>
+        <a href="ranking.html">Ranking</a>
+        <a class="cta" href="inscripcion.html" style="border-color:var(--border); background:rgba(255,255,255,.04)">Inscribirme</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<section class="hero">
+  <div class="container">
+    <h1>Inscripción</h1>
+  </div>
+</section>
+
+<main class="section">
+  <div class="container">
+    <div class="grid" style="grid-template-columns:1fr; gap:12px;">
+      <section class="card">
+        <h2 style="margin:0 0 10px 0; font-size:16px;">Datos del jugador - llene el formulario para completar su inscripción</h2>
+
+        <form action="#" method="post">
+          <div>
+            <label for="torneo">Torneo</label>
+            <select id="torneo" name="torneo" required>
+              <option value="" selected disabled>Selecciona</option>
+              <option>Medellín Open 250</option>
+              <option>Cali Junior Cup</option>
+              <option>Bogotá Open</option>
+              <option>Cartagena Copa Atlántico</option>
+              <option>Barranquilla City Challenge</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Juan Pérez" required>
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="300 123 4567" required>
+          </div>
+
+          <div>
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="correo@ejemplo.com" required>
+          </div>
+
+          <div>
+            <label for="identificacion">Cédula</label>
+            <input id="identificacion" name="identificacion" type="text" placeholder="CC / CE" required>
+          </div>
+
+          <div>
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria" required>
+              <option value="" selected disabled>Selecciona</option>
+              <option>Masculino</option>
+              <option>Femenino</option>
+              <option>Junior</option>
+            </select>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;">
+            <button class="btn" type="submit">Enviar (demo)</button>
+            <a class="btn" href="index.html">Volver</a>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    © 2026 Tennis Call
+  </div>
+</footer>
+
+</body>
+</html>
