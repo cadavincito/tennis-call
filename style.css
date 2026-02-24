@@ -21,9 +21,18 @@ body{
 }
 a{color:white; text-decoration:none}
 
-img{max-width:100%; display:block}
+img
+{
+  max-width:100%; 
+  display:block
+}
 
-.container{width:min(100% - 28px, var(--max)); margin:0 auto}
+.container{
+  width:min
+    (
+      100% - 28px, var(--max)); 
+      margin:0 auto
+}
 
 header{
   background:#020617;
@@ -45,7 +54,10 @@ header{
   border:1px solid transparent;
   border-radius:12px;
 }
-.links a:hover{border-color:var(--border)}
+.links a:hover
+{
+  border-color:var(--border)
+}
 
 .links .cta{
   border-color:rgba(59,130,246,.55);
@@ -63,14 +75,18 @@ header{
   border-radius:var(--radius);
   padding:14px;
 }
-.section{padding:18px 0 26px 0}
+.section{
+  padding:18px 0 26px 0
+}
 .grid{
   display:grid;
   grid-template-columns:1fr;
   gap:12px;
 }
 @media (min-width: 860px){
-  .grid{grid-template-columns:repeat(3, 1fr)}
+  .grid{
+    grid-template-columns:repeat(3, 1fr)
+  }
 }
 
 .badge{
@@ -85,11 +101,27 @@ header{
 .badge.warn{border-color:rgba(251,191,36,.55); background:rgba(251,191,36,.12)}
 .badge.soon{border-color:rgba(148,163,184,.4); background:rgba(148,163,184,.10); color:#d1d5db}
 
-.small{color:var(--muted); font-size:13px}
-.list{margin:10px 0 0 0; padding:0; list-style:none; display:grid; gap:4px; color:#d1d5db; font-size:14px}
+/* parrafos small */
+.small{
+  color:var(--muted); font-size:13px
+}
+
+/* lista de los cards de torneo */
+.list
+{
+  margin:10px 0 0 0; 
+  padding:0; 
+  list-style:none; 
+  display:grid; gap:4px; 
+  color:#d1d5db; 
+  font-size:14px
+}
 
 /* lista de ranking */
-.table-wrap{overflow:auto}
+.table-wrap{
+  overflow:auto
+}
+
 table{
   width:100%;
   border-collapse:collapse;
@@ -97,14 +129,36 @@ table{
   border-radius:var(--radius);
   overflow:hidden;
 }
-th,td{padding:10px 10px; border-bottom:1px solid var(--border); text-align:left; font-size:14px}
-th{color:#cbd5e1; font-size:13px; text-transform:uppercase; letter-spacing:.06em}
-tr:last-child td{border-bottom:none}
+th,td{
+  padding:10px 10px; border-bottom:1px solid var(--border); text-align:left; font-size:14px
+}
+
+th{
+  color:#cbd5e1; 
+  font-size:13px; 
+  text-transform:uppercase; 
+  letter-spacing:.06em
+}
+
+tr:last-child td
+{
+  border-bottom:none
+}
 
 /* Formulario de inscripcion */
-form{display:grid; gap:10px}
-label{font-size:13px; color:var(--muted); font-weight:700}
-input, select{
+form
+{
+  display:grid; 
+  gap:10px
+}
+
+label
+{
+  font-size:13px; color:var(--muted); font-weight:700
+}
+
+input, select
+{
   width:100%;
   padding:10px 10px;
   border-radius:12px;
@@ -112,7 +166,9 @@ input, select{
   background:#0b1220;
   color:var(--text);
 }
-.btn{
+
+.btn
+{
   display:inline-block;
   padding:10px 12px;
   border-radius:12px;
@@ -121,6 +177,8 @@ input, select{
   font-weight:800;
   text-align:center;
 }
+
+/* footer global*/
 .footer{
   padding:16px 0;
   border-top:1px solid var(--border);
