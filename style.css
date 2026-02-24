@@ -27,10 +27,9 @@ img
 }
 
 .container{
-  width:min
-    (
-      100% - 28px, var(--max)); 
-      margin:0 auto
+  max-width: 1000px;
+  padding: 0 14px;
+  margin: 0 auto;
 }
 
 header{
